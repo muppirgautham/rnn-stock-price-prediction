@@ -82,7 +82,7 @@ X_test = np.reshape(X_test,(X_test.shape[0], X_test.shape[1],1))
 X_test.shape
 predicted_stock_price_scaled = model.predict(X_test)
 predicted_stock_price = sc.inverse_transform(predicted_stock_price_scaled)
-plt.plot(np.arange(0,1384),inputs, color='red', label = 'Test(Real) venky to gawk')
+plt.plot(np.arange(0,1384),inputs, color='red', label = 'Test(Real) Google stock price')
 plt.plot(np.arange(60,1384),predicted_stock_price, color='blue', label = 'Predicted ')
 plt.title('Google Stock Price Prediction')
 plt.xlabel('Time')
@@ -97,7 +97,7 @@ mse(y_test,predicted_stock_price)
 
 ### True Stock Price, Predicted Stock Price vs time
 
-![image](https://github.com/muppirgautham/rnn-stock-price-prediction/assets/94810884/eca67a54-03f5-4fad-910e-8909b1a803dc)
+![image](https://github.com/muppirgautham/rnn-stock-price-prediction/assets/94810884/9fad06e5-fe46-4d11-98d2-8a4f757a1bf9)
 
 ### Mean Square Error
 ![image](https://github.com/muppirgautham/rnn-stock-price-prediction/assets/94810884/8a0a666a-0e5a-46e5-89fc-5eb762a8f0fe)
